@@ -1,8 +1,8 @@
 export const seoContent = {
   hero: {
-    title: "Damjan Savić - Senior Fullstack Developer & Digital Solutions Consultant",
-    subtitle: "Enterprise Software Development & AI Integration by Damjan Savić",
-    description: "Damjan Savić is a Senior Fullstack Developer and Digital Solutions Consultant based in Cologne, Germany. With 10+ years of experience, Damjan Savić delivers enterprise software, cloud-native solutions, and AI-powered systems using Python, React, TypeScript, OLLAMA, and modern technologies.",
+    title: "Damjan Savić | Fullstack, IoT & AI Developer",
+    subtitle: "Scalable Software Solutions with IoT and AI Integration",
+    description: "As a fullstack developer from Cologne, Damjan Savić specializes in building scalable software solutions with IoT and AI integration.",
     cta: {
       primary: "View Projects",
       secondary: "Work with Damjan Savić"

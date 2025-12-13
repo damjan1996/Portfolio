@@ -85,7 +85,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="text-white text-sm sm:text-base tracking-wider mb-2"
+                    className="text-zinc-400 text-sm sm:text-base tracking-wider mb-2"
                 >
                     {t('pages.home.hero.title')}
                 </motion.p>
@@ -93,10 +93,26 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="text-4xl sm:text-5xl font-bold mb-8 flex items-center"
+                    className="text-4xl sm:text-5xl font-bold mb-3 flex items-center"
                 >
                     {t('pages.home.hero.name')}<span className="animate-pulse ml-1">|</span>
                 </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.35 }}
+                    className="text-zinc-300 text-sm sm:text-base max-w-xl text-center mb-2 px-4"
+                >
+                    {t('pages.home.hero.description')}
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.38 }}
+                    className="text-zinc-500 text-xs sm:text-sm mb-8"
+                >
+                    {t('pages.home.hero.currentRole')}
+                </motion.p>
 
                 {/* Navigation */}
                 <motion.div

@@ -21,6 +21,18 @@ import dePowerPlatform from '../../i18n/locales/de/portfolio/projects/power-plat
 import enPowerPlatform from '../../i18n/locales/en/portfolio/projects/power-platform-governance';
 import srPowerPlatform from '../../i18n/locales/sr/portfolio/projects/power-platform-governance';
 
+import deAutomatedAdCreatives from '../../i18n/locales/de/portfolio/projects/automated-ad-creatives';
+import enAutomatedAdCreatives from '../../i18n/locales/en/portfolio/projects/automated-ad-creatives';
+import srAutomatedAdCreatives from '../../i18n/locales/sr/portfolio/projects/automated-ad-creatives';
+
+import deWebsiteMitKi from '../../i18n/locales/de/portfolio/projects/website-mit-ki';
+import enWebsiteMitKi from '../../i18n/locales/en/portfolio/projects/website-mit-ki';
+import srWebsiteMitKi from '../../i18n/locales/sr/portfolio/projects/website-mit-ki';
+
+import deRecrobot from '../../i18n/locales/de/portfolio/projects/recrobot';
+import enRecrobot from '../../i18n/locales/en/portfolio/projects/recrobot';
+import srRecrobot from '../../i18n/locales/sr/portfolio/projects/recrobot';
+
 // Interfaces für den Projektinhalt
 interface ProjectMeta {
     date?: string;
@@ -29,6 +41,7 @@ interface ProjectMeta {
     title: string;
     description: string;
     technologies?: string[];
+    videoUrl?: string;
 }
 
 interface ProjectContent {
@@ -96,6 +109,21 @@ const projectTranslations: ProjectTranslations = {
         de: dePowerPlatform,
         en: enPowerPlatform,
         sr: srPowerPlatform,
+    },
+    'automated-ad-creatives': {
+        de: deAutomatedAdCreatives,
+        en: enAutomatedAdCreatives,
+        sr: srAutomatedAdCreatives,
+    },
+    'website-mit-ki': {
+        de: deWebsiteMitKi,
+        en: enWebsiteMitKi,
+        sr: srWebsiteMitKi,
+    },
+    'recrobot': {
+        de: deRecrobot,
+        en: enRecrobot,
+        sr: srRecrobot,
     },
 };
 
@@ -226,25 +254,36 @@ const TranslatedProjectPage = () => {
                     </p>
                 </div>
 
-                {/* Cover Image */}
+                {/* Cover Video or Image */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     className="mb-12"
                 >
-                    <div className="relative aspect-video rounded-lg overflow-hidden bg-zinc-800">
-                        <img
-                            src={`/images/projects/${slug}/cover.jpg`}
-                            alt={project.meta.title}
-                            className="w-full h-full object-cover"
-                            loading="lazy"
-                            onError={(e) => {
-                                console.error('Image failed to load:', e.currentTarget.src);
-                            }}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/50 to-transparent opacity-50" />
-                    </div>
+                    {project.meta.videoUrl ? (
+                        <div className="relative aspect-video rounded-lg overflow-hidden bg-zinc-800">
+                            <iframe
+                                src={`${project.meta.videoUrl}/embed?b=0&title=1&a=1&loop=0&autoPlay=false&t=0&muted=0&wt=0`}
+                                className="absolute top-0 left-0 w-full h-full border-none"
+                                allowFullScreen
+                                loading="lazy"
+                            />
+                        </div>
+                    ) : (
+                        <div className="relative aspect-video rounded-lg overflow-hidden bg-zinc-800">
+                            <img
+                                src={`/images/projects/${slug}/cover.jpg`}
+                                alt={project.meta.title}
+                                className="w-full h-full object-cover"
+                                loading="lazy"
+                                onError={(e) => {
+                                    console.error('Image failed to load:', e.currentTarget.src);
+                                }}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/50 to-transparent opacity-50" />
+                        </div>
+                    )}
                 </motion.div>
 
                 {/* Project Content */}

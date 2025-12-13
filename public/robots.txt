@@ -1,6 +1,7 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
 # Disallow admin or sensitive paths if any
 Disallow: /admin

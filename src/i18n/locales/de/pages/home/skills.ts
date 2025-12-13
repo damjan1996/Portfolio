@@ -3,34 +3,34 @@ export const skills = {
     title: 'Fähigkeiten',
     skills: [
         {
-            name: 'ERP',
+            name: 'AI & LLMs',
             level: 90,
-            description: 'Enterprise Resource Planning'
+            description: 'GPT-4, Claude API, Vapi Voice AI'
+        },
+        {
+            name: 'Automation',
+            level: 85,
+            description: 'n8n, Zapier, Power Automate'
+        },
+        {
+            name: 'Python',
+            level: 90,
+            description: 'Backend, APIs, Automation'
+        },
+        {
+            name: 'TypeScript',
+            level: 85,
+            description: 'React, Next.js, Node.js'
         },
         {
             name: 'Datenbank',
             level: 85,
-            description: 'Datenbankentwicklung und -administration'
+            description: 'PostgreSQL, Supabase, MariaDB'
         },
         {
-            name: 'E-Commerce',
-            level: 95,
-            description: 'Online-Handel und Plattformen'
-        },
-        {
-            name: 'Python',
-            level: 80,
-            description: 'Programmiersprache Python'
-        },
-        {
-            name: 'React',
+            name: 'DevOps',
             level: 75,
-            description: 'Frontend-Entwicklung mit React'
-        },
-        {
-            name: 'Server',
-            level: 70,
-            description: 'Server-Administration'
+            description: 'Docker, Vercel, Dedicated Servers'
         }
     ],
     aria: {

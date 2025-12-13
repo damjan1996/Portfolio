@@ -1,8 +1,8 @@
 export const seoContent = {
   hero: {
-    title: "Damjan Savić - Senior Fullstack Entwickler & Digital Solutions Consultant Köln",
-    subtitle: "Enterprise Software Development & KI-Integration von Damjan Savić",
-    description: "Damjan Savić ist Senior Fullstack Entwickler und Digital Solutions Consultant in Köln. Mit über 10 Jahren Erfahrung entwickelt Damjan Savić Enterprise Software, Cloud-native Lösungen und KI-gestützte Systeme. Spezialist für Python, React, TypeScript, OLLAMA, Microservices und digitale Transformation.",
+    title: "Damjan Savić | Fullstack-, IoT- & KI-Entwickler",
+    subtitle: "Skalierbare Softwarelösungen mit IoT- und KI-Integration",
+    description: "Als Fullstack-Entwickler aus Köln spezialisiert sich Damjan Savić auf die Entwicklung skalierbarer Softwarelösungen mit IoT- und KI-Integration.",
     cta: {
       primary: "Projekte ansehen",
       secondary: "Kontakt aufnehmen"

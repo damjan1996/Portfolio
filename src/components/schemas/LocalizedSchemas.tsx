@@ -11,16 +11,16 @@ export function LocalizedPersonSchema() {
     "@id": "https://damjan-savic.com/#person",
     "name": currentLanguage === 'sr' ? "Дамјан Савић" : "Damjan Savić",
     "alternateName": currentLanguage === 'sr' ? ["Damjan Savić", "Damjan Savic"] : "Damjan Savic",
-    "jobTitle": currentLanguage === 'de' ? 
-      ["Senior Fullstack Entwickler", "Digital Solutions Consultant", "Software Architekt", "KI/AI Spezialist"] :
-      currentLanguage === 'sr' ? 
-      ["Старији програмер пуног стека", "Консултант за дигитална решења", "Софтверски архитекта", "Специјалиста за вештачку интелигенцију"] :
-      ["Senior Fullstack Developer", "Digital Solutions Consultant", "Software Architect", "AI Specialist"],
-    "description": currentLanguage === 'de' ? 
-      "Damjan Savić ist ein Senior Fullstack Entwickler und Digital Solutions Consultant aus Köln. Damjan Savić ist spezialisiert auf Python, JavaScript, React, Next.js, TypeScript und KI-Integration. Mit über 10 Jahren Erfahrung entwickelt Damjan Savić maßgeschneiderte Enterprise-Lösungen, moderne Web-Applikationen und innovative KI-gestützte Systeme für Unternehmen jeder Größe." :
+    "jobTitle": currentLanguage === 'de' ?
+      ["AI & Automation Specialist", "Process Automation Specialist", "Fullstack Entwickler"] :
       currentLanguage === 'sr' ?
-      "Дамјан Савић је старији програмер пуног стека и консултант за дигитална решења из Келна. Дамјан Савић је специјализован за Python, JavaScript, React, Next.js, TypeScript и интеграцију вештачке интелигенције. Са преко 10 година искуства, Дамјан Савић развија прилагођена решења за предузећа, модерне веб апликације и иновативне системе подржане вештачком интелигенцијом." :
-      "Damjan Savić is a Senior Fullstack Developer and Digital Solutions Consultant based in Cologne, Germany. Damjan Savić specializes in Python, JavaScript, React, Next.js, TypeScript, and AI integration. With over 10 years of experience, Damjan Savić delivers custom enterprise solutions, modern web applications, and innovative AI-powered systems.",
+      ["AI & Automation Specialist", "Specijalist za automatizaciju procesa", "Fullstack Developer"] :
+      ["AI & Automation Specialist", "Process Automation Specialist", "Fullstack Developer"],
+    "description": currentLanguage === 'de' ?
+      "Damjan Savić ist AI & Automation Specialist. Spezialisiert auf KI-Agenten, Voice AI mit Vapi, Prozessautomatisierung mit n8n und Zapier. Entwickelt produktive Automatisierungslösungen und Voice-AI-Plattformen." :
+      currentLanguage === 'sr' ?
+      "Дамјан Савић је AI & Automation Specialist. Специјализован за AI агенте, Voice AI са Vapi, аутоматизацију процеса са n8n и Zapier. Развија продуктивна решења за аутоматизацију и Voice AI платформе." :
+      "Damjan Savić is an AI & Automation Specialist. Specialized in AI agents, Voice AI with Vapi, process automation with n8n and Zapier. Building production automation solutions and Voice AI platforms.",
     "url": "https://damjan-savic.com",
     "image": [
       {
@@ -59,89 +59,53 @@ export function LocalizedPersonSchema() {
       "https://stackoverflow.com/users/damjansavic"
     ],
     "knowsAbout": currentLanguage === 'de' ? [
+      "KI-Agenten Entwicklung",
+      "Voice AI (Vapi)",
+      "Prozessautomatisierung (n8n, Zapier)",
+      "GPT-4 & Claude API Integration",
       "Python Entwicklung",
-      "JavaScript Entwicklung",
-      "React.js",
+      "TypeScript & React",
       "Next.js",
-      "TypeScript",
-      "Electron Desktop Anwendungen",
-      "Künstliche Intelligenz (KI/AI)",
-      "OLLAMA AI/ML Integration",
-      "Machine Learning",
-      "Large Language Models (LLM)",
-      "ERP Systeme Integration",
-      "SAP Integration",
-      "E-Commerce Entwicklung",
-      "Shopify Entwicklung",
-      "WooCommerce Integration",
-      "Prozessautomatisierung",
-      "Workflow-Optimierung",
+      "Web Scraping",
+      "WebSocket & Echtzeit-Anwendungen",
+      "Supabase & PostgreSQL",
       "Backend Entwicklung",
       "Frontend Entwicklung",
       "Full Stack Entwicklung",
-      "Cloud Architektur",
-      "AWS Services",
-      "Docker & Kubernetes",
-      "Microservices Architektur",
-      "DevOps & CI/CD",
-      "Agile Entwicklung",
-      "Software Architektur"
+      "Docker",
+      "Vercel Deployment"
     ] : currentLanguage === 'sr' ? [
+      "Развој AI агената",
+      "Voice AI (Vapi)",
+      "Аутоматизација процеса (n8n, Zapier)",
+      "GPT-4 & Claude API интеграција",
       "Python развој",
-      "JavaScript развој",
-      "React.js",
+      "TypeScript & React",
       "Next.js",
-      "TypeScript",
-      "Electron десктоп апликације",
-      "Вештачка интелигенција (AI)",
-      "OLLAMA AI/ML интеграција",
-      "Машинско учење",
-      "Велики језички модели (LLM)",
-      "ERP системи интеграција",
-      "SAP интеграција",
-      "E-Commerce развој",
-      "Shopify развој",
-      "WooCommerce интеграција",
-      "Аутоматизација процеса",
-      "Оптимизација радног тока",
+      "Web Scraping",
+      "WebSocket & real-time апликације",
+      "Supabase & PostgreSQL",
       "Backend развој",
       "Frontend развој",
       "Full Stack развој",
-      "Облак архитектура",
-      "AWS сервиси",
-      "Docker & Kubernetes",
-      "Microservices архитектура",
-      "DevOps & CI/CD",
-      "Агилни развој",
-      "Софтверска архитектура"
+      "Docker",
+      "Vercel Deployment"
     ] : [
+      "AI Agents Development",
+      "Voice AI (Vapi)",
+      "Process Automation (n8n, Zapier)",
+      "GPT-4 & Claude API Integration",
       "Python Development",
-      "JavaScript Development",
-      "React.js",
+      "TypeScript & React",
       "Next.js",
-      "TypeScript",
-      "Electron Desktop Applications",
-      "Artificial Intelligence (AI)",
-      "OLLAMA AI/ML Integration",
-      "Machine Learning",
-      "Large Language Models (LLM)",
-      "ERP Systems Integration",
-      "SAP Integration",
-      "E-Commerce Development",
-      "Shopify Development",
-      "WooCommerce Integration",
-      "Process Automation",
-      "Workflow Optimization",
+      "Web Scraping",
+      "WebSocket & Real-time Applications",
+      "Supabase & PostgreSQL",
       "Backend Development",
       "Frontend Development",
       "Full Stack Development",
-      "Cloud Architecture",
-      "AWS Services",
-      "Docker & Kubernetes",
-      "Microservices Architecture",
-      "DevOps & CI/CD",
-      "Agile Development",
-      "Software Architecture"
+      "Docker",
+      "Vercel Deployment"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -151,20 +115,13 @@ export function LocalizedPersonSchema() {
     },
     "worksFor": {
       "@type": "Organization",
-      "name": "CoderConda",
-      "description": currentLanguage === 'de' ? 
-        "Moderne Softwareentwicklung, KI-Integration und Prozessautomatisierung von Damjan Savić" :
+      "name": "Everlast Consulting GmbH",
+      "description": currentLanguage === 'de' ?
+        "Prozessautomatisierung und KI-Lösungen" :
         currentLanguage === 'sr' ?
-        "Модерни развој софтвера, интеграција вештачке интелигенције и аутоматизација процеса од Дамјана Савића" :
-        "Modern software development, AI integration, and process automation by Damjan Savić",
-      "url": "https://damjan-savic.com",
-      "founder": currentLanguage === 'sr' ? "Дамјан Савић" : "Damjan Savić",
-      "foundingDate": "2020",
-      "slogan": currentLanguage === 'de' ? 
-        "Innovative Lösungen für digitale Herausforderungen" :
-        currentLanguage === 'sr' ?
-        "Иновативна решења за дигиталне изазове" :
-        "Innovative solutions for digital challenges"
+        "Аутоматизација процеса и AI решења" :
+        "Process Automation and AI Solutions",
+      "url": "https://everlast-consulting.de"
     },
     "alumniOf": [
       {
@@ -237,17 +194,17 @@ export function LocalizedWebsiteSchema() {
     "@type": "WebSite",
     "@id": "https://damjan-savic.com/#website",
     "url": "https://damjan-savic.com",
-    "name": currentLanguage === 'de' ? 
-      "Damjan Savić - Senior Fullstack Entwickler & Digital Solutions Consultant" :
+    "name": currentLanguage === 'de' ?
+      "Damjan Savić - AI & Automation Specialist" :
       currentLanguage === 'sr' ?
-      "Дамјан Савић - Старији програмер пуног стека и консултант за дигитална решења" :
-      "Damjan Savić - Senior Fullstack Developer & Digital Solutions Consultant",
-    "alternateName": ["Damjan Savic Portfolio", "CoderConda"],
-    "description": currentLanguage === 'de' ? 
-      "Offizielle Website von Damjan Savić - Senior Fullstack Entwickler und Digital Solutions Consultant aus Köln. Spezialisiert auf Enterprise Software Development, KI-Integration, Cloud Architecture und moderne Web-Technologien. Entdecken Sie innovative Lösungen von Damjan Savić." :
+      "Дамјан Савић - AI & Automation Specialist" :
+      "Damjan Savić - AI & Automation Specialist",
+    "alternateName": ["Damjan Savic Portfolio"],
+    "description": currentLanguage === 'de' ?
+      "Offizielle Website von Damjan Savić - AI & Automation Specialist. Spezialisiert auf KI-Agenten, Voice AI, Prozessautomatisierung mit n8n und Fullstack Development." :
       currentLanguage === 'sr' ?
-      "Званична веб страница Дамјана Савића - старији програмер пуног стека и консултант за дигитална решења из Келна. Специјализован за развој софтвера за предузећа, интеграцију вештачке интелигенције, облак архитектуру и модерне веб технологије." :
-      "Official website of Damjan Savić - Senior Fullstack Developer and Digital Solutions Consultant based in Cologne, Germany. Specializing in Enterprise Software Development, AI Integration, Cloud Architecture, and modern web technologies. Discover innovative solutions by Damjan Savić.",
+      "Званична веб страница Дамјана Савића - AI & Automation Specialist. Специјализован за AI агенте, Voice AI, аутоматизацију процеса са n8n и Fullstack развој." :
+      "Official website of Damjan Savić - AI & Automation Specialist. Specialized in AI agents, Voice AI, process automation with n8n, and Fullstack Development.",
     "publisher": {
       "@id": "https://damjan-savic.com/#person"
     },
@@ -263,11 +220,11 @@ export function LocalizedWebsiteSchema() {
         "Контактирајте Дамјана Савића" :
         "Contact Damjan Savić"
     },
-    "keywords": currentLanguage === 'de' ? 
-      "Damjan Savić, Senior Fullstack Developer, Digital Solutions Consultant, Software Architekt Köln, Python Experte, React Spezialist, KI Integration" :
+    "keywords": currentLanguage === 'de' ?
+      "Damjan Savić, AI Automation Specialist, KI-Agenten, Voice AI, n8n, Prozessautomatisierung, TypeScript, Python, Next.js" :
       currentLanguage === 'sr' ?
-      "Дамјан Савић, Старији програмер пуног стека, Консултант за дигитална решења, Софтверски архитекта, Python експерт, React специјалиста, интеграција вештачке интелигенције" :
-      "Damjan Savić, Senior Fullstack Developer, Digital Solutions Consultant, Software Architect Cologne, Python Expert, React Specialist, AI Integration",
+      "Дамјан Савић, AI Automation Specialist, AI агенти, Voice AI, n8n, аутоматизација процеса, TypeScript, Python, Next.js" :
+      "Damjan Savić, AI Automation Specialist, AI Agents, Voice AI, n8n, Process Automation, TypeScript, Python, Next.js",
     "dateCreated": "2020-01-01",
     "dateModified": "2025-01-15",
     "creator": {

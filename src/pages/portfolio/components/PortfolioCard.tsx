@@ -68,9 +68,6 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
                         loading="lazy"
                         style={{ transformOrigin: 'center center' }}
                     />
-                    {/* Gradient overlay that extends beyond the image */}
-                    <div className="absolute inset-x-0 -bottom-20 top-0 bg-gradient-to-t from-zinc-900 via-zinc-900/70 to-transparent
-                                  opacity-95" />
                 </div>
 
                 {/* Content - with relative positioning to overlap the gradient */}

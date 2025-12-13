@@ -24,6 +24,12 @@ export const portfolio = {
     },
     // Detalji projekta
     project: {
+        loading: 'Učitavanje projekta...',
+        backToPortfolio: 'Nazad na portfolio',
+        notFound: {
+            title: 'Projekat nije pronađen',
+            description: 'Traženi projekat nije pronađen.'
+        },
         navigation: {
             back: 'Nazad na portfolio',
             projectDetails: 'DETALJI PROJEKTA'

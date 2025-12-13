@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Database, Server, Store, Code2, CodepenIcon, Box } from 'lucide-react';
+import { Database, Server, Code2, Bot, Workflow, FileCode2 } from 'lucide-react';
 
 interface Skill {
     name: string;
@@ -10,14 +10,15 @@ interface Skill {
 }
 
 const iconMap: { [key: string]: React.ReactNode } = {
-    'ERP': <Box className="w-8 h-8" />,
+    'AI & LLMs': <Bot className="w-8 h-8" />,
+    'Automation': <Workflow className="w-8 h-8" />,
+    'Automatizacija': <Workflow className="w-8 h-8" />,
+    'Python': <Code2 className="w-8 h-8" />,
+    'TypeScript': <FileCode2 className="w-8 h-8" />,
     'Datenbank': <Database className="w-8 h-8" />,
     'Database': <Database className="w-8 h-8" />,
     'Baze podataka': <Database className="w-8 h-8" />,
-    'E-Commerce': <Store className="w-8 h-8" />,
-    'Python': <Code2 className="w-8 h-8" />,
-    'React': <CodepenIcon className="w-8 h-8" />,
-    'Server': <Server className="w-8 h-8" />
+    'DevOps': <Server className="w-8 h-8" />
 };
 
 const Skills = () => {

@@ -24,6 +24,12 @@ export const portfolio = {
     },
     // Projekt-Details
     project: {
+        loading: 'Projekt wird geladen...',
+        backToPortfolio: 'Zurück zum Portfolio',
+        notFound: {
+            title: 'Projekt nicht gefunden',
+            description: 'Das angeforderte Projekt konnte nicht gefunden werden.'
+        },
         navigation: {
             back: 'Zurück zum Portfolio',
             projectDetails: 'PROJEKT DETAILS'

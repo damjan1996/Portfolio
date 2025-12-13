@@ -7,14 +7,24 @@ export const experience = {
     },
     positions: [
         {
-            role: 'Consultant Digital Solutions & Developer',
-            company: 'RITTER Gesellschaft für digitale Geschäftsprozesse mbH',
-            period: '08/2023 - DANAS',
+            role: 'Specijalist za automatizaciju procesa',
+            company: 'Everlast Consulting GmbH',
+            period: '12/2024 - DANAS',
             highlights: [
-                'JTL WaWi, WMS i POS konsalting i implementacija',
-                'Python-bazirana automatizaciona rešenja',
-                'RFID sistemi i GUI razvoj',
-                'AI i poslovna inteligencija'
+                'Razvoj AI agenata sa n8n i Zapier',
+                'Izrada web scraping rešenja',
+                'RecroBot voice interview platforma',
+                'Migracija sa Power Automate na n8n'
+            ]
+        },
+        {
+            role: 'Consultant Digital Solutions',
+            company: 'Ritter Digital GmbH',
+            period: '08/2023 - 11/2024',
+            highlights: [
+                'Backend servisi na dedikovanim serverima',
+                'AI integracija preko Power Automate',
+                'RFID/IoT rešenja sa Zebra hardverom'
             ]
         },
         {

@@ -1,0 +1,157 @@
+---
+slug: "recrobot"
+title: "RecroBot - AI Voice Interview Platform"
+description: "KI Voice Interview-Plattform für automatisierte HR-Interviews mit Echtzeit-Sprachtranskription"
+excerpt: "Produktive Voice-AI-Plattform für automatisierte HR-Interviews mit TypeScript/Next.js 14 und Vapi Voice AI."
+date: "2024-12-01"
+category: "AI & Automation"
+coverImage: "/images/projects/recrobot/cover.jpg"
+client: "Everlast Consulting GmbH"
+duration: "Laufend"
+url: "https://recrobot.site"
+repository: ""
+documentation: ""
+published: true
+featured: true
+technologies: ["TypeScript", "Next.js 14", "Vapi Voice AI", "WebSocket", "Supabase", "Tailwind CSS"]
+tags: ["Voice AI", "AI Agents", "HR Tech", "Real-time", "WebSocket"]
+---
+
+<div style={{ margin: "20px 0", padding: "20px", backgroundColor: "#3d3d3d", borderRadius: "8px" }}>
+  <p style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
+    RecroBot ist eine produktive Voice-AI-Plattform für automatisierte HR-Interviews. Was als technische Testaufgabe begann, ist jetzt ein vollständiges HR-Produkt im Einsatz.
+  </p>
+</div>
+
+<hr style={{ margin: "40px 0", border: "none", height: "1px", backgroundColor: "#ddd" }} />
+
+<h2 style={{ marginBottom: "20px" }}>Live Demo</h2>
+<div style={{ marginBottom: "30px", padding: "15px", backgroundColor: "#2a2a2a", borderRadius: "8px", border: "1px solid #444" }}>
+  <p style={{ fontSize: "1rem", lineHeight: "1.6", marginBottom: "10px" }}>
+    <strong>Teste die Demo:</strong> Besuche <a href="https://recrobot.site" target="_blank" rel="noopener noreferrer" style={{ color: "#60a5fa" }}>recrobot.site</a> und gib <strong>"AI-Manager"</strong> als Position an.
+  </p>
+</div>
+
+<h2 style={{ marginBottom: "20px" }}>Features</h2>
+<div style={{ marginBottom: "30px" }}>
+  <ul style={{ marginLeft: "20px", fontSize: "1rem", lineHeight: "1.8" }}>
+    <li><strong>Echtzeit-Sprachtranskription</strong> – Live-Transkription während des Interviews</li>
+    <li><strong>WebSocket Event-Handling</strong> – Nahtlose Kommunikation zwischen Client und Server</li>
+    <li><strong>Gesprächszustandsverwaltung</strong> – Intelligente Steuerung des Interview-Flows</li>
+    <li><strong>Responsive UI</strong> – Optimiert für Desktop und Mobile</li>
+    <li><strong>Voice AI Integration</strong> – Natürliche Sprachinteraktion mit Kandidaten</li>
+  </ul>
+</div>
+
+<h2 style={{ marginBottom: "20px" }}>Systemarchitektur</h2>
+<div style={{ marginBottom: "30px" }}>
+  <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+    Die Lösung basiert auf einer modernen Next.js 14 Architektur:
+  </p>
+  <ul style={{ marginLeft: "20px", fontSize: "1rem", lineHeight: "1.6" }}>
+    <li>Next.js 14 App Router mit Server Components</li>
+    <li>Vapi Voice AI für Sprachverarbeitung</li>
+    <li>WebSocket für Echtzeit-Kommunikation</li>
+    <li>Supabase für Datenpersistenz</li>
+    <li>Tailwind CSS für responsives Design</li>
+  </ul>
+</div>
+
+<h2 style={{ marginBottom: "20px" }}>Tech Stack</h2>
+<div style={{ marginBottom: "30px" }}>
+  <table style={{ width: "100%", borderCollapse: "collapse" }}>
+    <thead>
+      <tr style={{ borderBottom: "1px solid #444" }}>
+        <th style={{ padding: "12px", textAlign: "left", color: "#ccc" }}>Kategorie</th>
+        <th style={{ padding: "12px", textAlign: "left", color: "#ccc" }}>Technologie</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style={{ borderBottom: "1px solid #333" }}>
+        <td style={{ padding: "12px" }}>Frontend</td>
+        <td style={{ padding: "12px" }}>Next.js 14, TypeScript, Tailwind CSS</td>
+      </tr>
+      <tr style={{ borderBottom: "1px solid #333" }}>
+        <td style={{ padding: "12px" }}>Voice AI</td>
+        <td style={{ padding: "12px" }}>Vapi Voice AI</td>
+      </tr>
+      <tr style={{ borderBottom: "1px solid #333" }}>
+        <td style={{ padding: "12px" }}>Realtime</td>
+        <td style={{ padding: "12px" }}>WebSocket</td>
+      </tr>
+      <tr style={{ borderBottom: "1px solid #333" }}>
+        <td style={{ padding: "12px" }}>Database</td>
+        <td style={{ padding: "12px" }}>Supabase (PostgreSQL)</td>
+      </tr>
+      <tr>
+        <td style={{ padding: "12px" }}>Deployment</td>
+        <td style={{ padding: "12px" }}>Vercel</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 style={{ marginBottom: "20px" }}>Voice AI Integration</h2>
+<div style={{ marginBottom: "30px" }}>
+  <pre style={{ backgroundColor: "#3d3d3d", padding: "20px", borderRadius: "8px", overflow: "auto" }}>
+    <code className="language-typescript" style={{ color: "#f8f8f2" }}>
+{`// Vapi Voice AI Event Handling
+const handleVapiEvents = (event: VapiEvent) => {
+  switch (event.type) {
+    case 'speech-start':
+      setIsListening(true);
+      break;
+    case 'transcript':
+      updateTranscript(event.transcript);
+      break;
+    case 'call-end':
+      finalizeInterview();
+      break;
+  }
+};`}
+    </code>
+  </pre>
+</div>
+
+<h2 style={{ marginBottom: "20px" }}>WebSocket Kommunikation</h2>
+<div style={{ marginBottom: "30px" }}>
+  <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+    Echtzeit-Event-Handling für nahtlose Benutzererfahrung:
+  </p>
+  <ul style={{ marginLeft: "20px", fontSize: "1rem", lineHeight: "1.6" }}>
+    <li>Bidirektionale Kommunikation</li>
+    <li>Automatische Reconnection-Logik</li>
+    <li>Event-basierte Zustandsänderungen</li>
+    <li>Optimierte Latenz für Voice-Anwendungen</li>
+  </ul>
+</div>
+
+<h2 style={{ marginBottom: "20px" }}>Interview Flow</h2>
+<div style={{ marginBottom: "30px" }}>
+  <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+    Intelligente Gesprächssteuerung:
+  </p>
+  <ul style={{ marginLeft: "20px", fontSize: "1rem", lineHeight: "1.6" }}>
+    <li>Dynamische Fragenanpassung basierend auf Antworten</li>
+    <li>Kontextbewusstes Follow-up</li>
+    <li>Natürlicher Gesprächsfluss</li>
+    <li>Automatische Zusammenfassung</li>
+  </ul>
+</div>
+
+<h2 style={{ marginBottom: "20px" }}>Entstehung</h2>
+<div style={{ marginBottom: "30px" }}>
+  <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+    Das Projekt entstand ursprünglich als technische Testaufgabe für eine Bewerbung bei Everlast Consulting. Nach positivem Feedback wurde es zu einem vollständigen Produkt weiterentwickelt, das jetzt aktiv für HR-Interviews eingesetzt wird.
+  </p>
+</div>
+
+<h2 style={{ marginBottom: "20px" }}>Ergebnisse</h2>
+<div style={{ marginBottom: "30px" }}>
+  <ul style={{ marginLeft: "20px", fontSize: "1rem", lineHeight: "1.6" }}>
+    <li>Produktive Plattform im aktiven Einsatz</li>
+    <li>Automatisierung von Screening-Interviews</li>
+    <li>Konsistente Interview-Qualität</li>
+    <li>Skalierbare HR-Prozesse</li>
+  </ul>
+</div>

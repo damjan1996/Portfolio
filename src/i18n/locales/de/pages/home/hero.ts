@@ -1,11 +1,13 @@
 // src/i18n/locales/de/pages/home/hero.ts
 export const hero = {
-    title: 'SENIOR FULLSTACK ENTWICKLER & DIGITAL SOLUTIONS CONSULTANT KÖLN',
+    title: 'AI & AUTOMATION SPECIALIST',
     name: 'DAMJAN SAVIĆ',
-    subtitle: 'ENTERPRISE SOFTWARE | KI-INTEGRATION | CLOUD ARCHITECTURE',
-    cta: 'MIT DAMJAN SAVIĆ ZUSAMMENARBEITEN',
+    subtitle: 'KI-AGENTEN | VOICE AI | PROZESSAUTOMATISIERUNG',
+    description: 'Entwicklung von KI-Agenten und Automatisierungslösungen. Von Voice-AI-Plattformen bis zu autonomen Web-Agenten.',
+    currentRole: 'Aktuell @ Everlast Consulting GmbH',
+    cta: 'KONTAKT AUFNEHMEN',
     image: {
-        alt: 'Damjan Savić - Senior Fullstack Entwickler & Digital Solutions Consultant Köln | Enterprise Software, KI & Cloud Expert'
+        alt: 'Damjan Savić - AI & Automation Specialist | KI-Agenten, Voice AI & Prozessautomatisierung'
     },
     social: {
         getInTouch: 'Kontaktieren Sie Damjan Savić',

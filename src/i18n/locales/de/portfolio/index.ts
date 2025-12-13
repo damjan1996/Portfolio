@@ -3,6 +3,8 @@ import aiDataReader from './projects/ai-data-reader';
 import kamenpro from './projects/kamenpro';
 import smartWarehouse from './projects/smart-warehouse';
 import powerPlatformGovernance from './projects/power-platform-governance';
+import websiteMitKi from './projects/website-mit-ki';
+import recrobot from './projects/recrobot';
 export const portfolio = {
     // Meta-Informationen für die Portfolio-Seite
     seo: {
@@ -58,5 +60,7 @@ export const portfolio = {
         'kamenpro': kamenpro,
         'smart-warehouse': smartWarehouse,
         'power-platform-governance': powerPlatformGovernance,
+        'website-mit-ki': websiteMitKi,
+        'recrobot': recrobot,
     }
 };

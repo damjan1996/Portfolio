@@ -1,10 +1,13 @@
 // src/i18n/locales/sr/pages/home/hero.ts
 export const hero = {
-    title: 'SENIOR FULLSTACK DEVELOPER',
+    title: 'AI & AUTOMATION SPECIALIST',
     name: 'DAMJAN SAVIĆ',
+    subtitle: 'AI AGENTI | VOICE AI | AUTOMATIZACIJA PROCESA',
+    description: 'Razvoj AI agenata i rešenja za automatizaciju. Od voice AI platformi do autonomnih web agenata.',
+    currentRole: 'Trenutno @ Everlast Consulting GmbH',
     cta: 'KONTAKTIRAJTE ME',
     image: {
-        alt: 'Damjan Savić (Дамјан Савић) - Старији програмер пуног стека и консултант за дигитална решења'
+        alt: 'Damjan Savić (Дамјан Савић) - AI & Automation Specialist | AI Agenti, Voice AI & Automatizacija'
     },
     social: {
         getInTouch: 'Kontaktirajte me',

@@ -3,34 +3,34 @@ export const skills = {
     title: 'Veštine',
     skills: [
         {
-            name: 'ERP',
+            name: 'AI & LLMs',
             level: 90,
-            description: 'Enterprise Resource Planning'
+            description: 'GPT-4, Claude API, Vapi Voice AI'
+        },
+        {
+            name: 'Automatizacija',
+            level: 85,
+            description: 'n8n, Zapier, Power Automate'
+        },
+        {
+            name: 'Python',
+            level: 90,
+            description: 'Backend, API-ji, Automatizacija'
+        },
+        {
+            name: 'TypeScript',
+            level: 85,
+            description: 'React, Next.js, Node.js'
         },
         {
             name: 'Baze podataka',
             level: 85,
-            description: 'Razvoj i administracija baza podataka'
+            description: 'PostgreSQL, Supabase, MariaDB'
         },
         {
-            name: 'E-Commerce',
-            level: 95,
-            description: 'Online trgovina i platforme'
-        },
-        {
-            name: 'Python',
-            level: 80,
-            description: 'Programski jezik Python'
-        },
-        {
-            name: 'React',
+            name: 'DevOps',
             level: 75,
-            description: 'Frontend razvoj sa React-om'
-        },
-        {
-            name: 'Server',
-            level: 70,
-            description: 'Server administracija'
+            description: 'Docker, Vercel, Dedicated Servers'
         }
     ],
     aria: {

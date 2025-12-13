@@ -1,9 +1,9 @@
 export const meta = {
     site: {
         name: 'Damjan Savić',
-        title: 'Damjan Savić - Senior Fullstack Developer & Digital Solutions Consultant | Cologne, Germany',
-        subtitle: 'Enterprise Software Development, AI Integration & Cloud Architecture by Damjan Savić',
-        description: 'Damjan Savić is a Senior Fullstack Developer and Digital Solutions Consultant based in Cologne, Germany. Specializing in Enterprise Software Development, Cloud-native solutions, and AI integration. Damjan Savić delivers custom solutions using Python, React, TypeScript, OLLAMA, and modern web technologies for digital transformation.',
+        title: 'Damjan Savić | Fullstack, IoT & AI Developer',
+        subtitle: 'Scalable Software Solutions with IoT and AI Integration',
+        description: 'As a fullstack developer from Cologne, Damjan Savić specializes in building scalable software solutions with IoT and AI integration.',
         keywords: [
             'Damjan Savić',
             'Damjan Savic',

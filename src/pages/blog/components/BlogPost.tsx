@@ -314,60 +314,181 @@ const BlogPost: React.FC = () => {
                              prose-blockquote:border-l-zinc-700 prose-blockquote:text-zinc-400"
                         >
                             {/* Intro Section */}
-                            <section>
-                                <h2>{post.content.intro.title}</h2>
-                                <p>{post.content.intro.description}</p>
-                            </section>
+                            {post.content.intro && (
+                                <section>
+                                    <h2>{post.content.intro.title}</h2>
+                                    <p>{post.content.intro.description}</p>
+                                </section>
+                            )}
 
-                            {/* Background Section */}
-                            <section>
-                                <h2>{post.content.background.title}</h2>
-                                <div className="mb-6">
-                                    <h3>Systems</h3>
-                                    <ul>
-                                        {Object.values(post.content.background.systems).map((system, index) => (
-                                            <li key={index}>{system}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3>Challenges</h3>
-                                    <ul>
-                                        {Object.values(post.content.background.challenges).map((challenge, index) => (
-                                            <li key={index}>{challenge}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </section>
+                            {/* Video Embed (for posts with videoUrl) */}
+                            {(post as unknown as { videoUrl?: string }).videoUrl && (
+                                <section className="my-8">
+                                    <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px' }}>
+                                        <iframe
+                                            src={`${(post as unknown as { videoUrl: string }).videoUrl}/embed?b=0&title=1&a=1&loop=0&autoPlay=false&t=0&muted=0&wt=0`}
+                                            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+                                            allowFullScreen
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                </section>
+                            )}
 
-                            {/* Technical Architecture */}
-                            <section>
-                                <h2>{post.content.tech.title}</h2>
-                                <h3>{post.content.tech.components.title}</h3>
-                                <pre>
-                                    <code>{post.content.tech.components.code}</code>
-                                </pre>
-                            </section>
+                            {/* Background Section (optional) */}
+                            {post.content.background && (
+                                <section>
+                                    <h2>{post.content.background.title}</h2>
+                                    {post.content.background.systems && (
+                                        <div className="mb-6">
+                                            <h3>Systems</h3>
+                                            <ul>
+                                                {Object.values(post.content.background.systems).map((system, index) => (
+                                                    <li key={index}>{system}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                    {post.content.background.challenges && (
+                                        <div>
+                                            <h3>Challenges</h3>
+                                            <ul>
+                                                {Object.values(post.content.background.challenges).map((challenge, index) => (
+                                                    <li key={index}>{challenge}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                </section>
+                            )}
 
-                            {/* API Section */}
-                            <section>
-                                <h2>{post.content.api.title}</h2>
-                                <div className="mb-6">
-                                    <h3>{post.content.api.apparel_magic.title}</h3>
-                                    <p>{post.content.api.apparel_magic.description}</p>
-                                </div>
-                            </section>
+                            {/* Technical Architecture (optional) */}
+                            {post.content.tech && (
+                                <section>
+                                    <h2>{post.content.tech.title}</h2>
+                                    {post.content.tech.components && (
+                                        <>
+                                            <h3>{post.content.tech.components.title}</h3>
+                                            {post.content.tech.components.code && (
+                                                <pre>
+                                                    <code>{post.content.tech.components.code}</code>
+                                                </pre>
+                                            )}
+                                        </>
+                                    )}
+                                </section>
+                            )}
+
+                            {/* API Section (optional) */}
+                            {post.content.api && (
+                                <section>
+                                    <h2>{post.content.api.title}</h2>
+                                    {post.content.api.apparel_magic && (
+                                        <div className="mb-6">
+                                            <h3>{post.content.api.apparel_magic.title}</h3>
+                                            <p>{post.content.api.apparel_magic.description}</p>
+                                        </div>
+                                    )}
+                                </section>
+                            )}
+
+                            {/* Workflow Section (for ad-creatives style posts) */}
+                            {(post.content as unknown as { workflow?: { title: string; steps: Record<string, { title: string; description: string; points?: string[]; advantages?: string[]; steps?: string[] }> } }).workflow && (
+                                <section>
+                                    <h2>{(post.content as unknown as { workflow: { title: string } }).workflow.title}</h2>
+                                    {Object.values((post.content as unknown as { workflow: { steps: Record<string, { title: string; description: string; points?: string[]; advantages?: string[]; steps?: string[] }> } }).workflow.steps).map((step, index) => (
+                                        <div key={index} className="mb-6">
+                                            <h3>{step.title}</h3>
+                                            <p>{step.description}</p>
+                                            {step.points && (
+                                                <ul>
+                                                    {step.points.map((point, i) => (
+                                                        <li key={i}>{point}</li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                            {step.advantages && (
+                                                <ul>
+                                                    {step.advantages.map((adv, i) => (
+                                                        <li key={i}>{adv}</li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                            {step.steps && (
+                                                <ul>
+                                                    {step.steps.map((s, i) => (
+                                                        <li key={i}>{s}</li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
+                                    ))}
+                                </section>
+                            )}
+
+                            {/* Advantages Section (for ad-creatives style posts) */}
+                            {(post.content as unknown as { advantages?: { title: string; efficiency?: { title: string; points: string[] }; scalability?: { title: string; points: string[] }; consistency?: { title: string; points: string[] } } }).advantages && (
+                                <section>
+                                    <h2>{(post.content as unknown as { advantages: { title: string } }).advantages.title}</h2>
+                                    {(post.content as unknown as { advantages: { efficiency?: { title: string; points: string[] } } }).advantages.efficiency && (
+                                        <div className="mb-4">
+                                            <h3>{(post.content as unknown as { advantages: { efficiency: { title: string } } }).advantages.efficiency.title}</h3>
+                                            <ul>
+                                                {(post.content as unknown as { advantages: { efficiency: { points: string[] } } }).advantages.efficiency.points.map((point, i) => (
+                                                    <li key={i}>{point}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                    {(post.content as unknown as { advantages: { scalability?: { title: string; points: string[] } } }).advantages.scalability && (
+                                        <div className="mb-4">
+                                            <h3>{(post.content as unknown as { advantages: { scalability: { title: string } } }).advantages.scalability.title}</h3>
+                                            <ul>
+                                                {(post.content as unknown as { advantages: { scalability: { points: string[] } } }).advantages.scalability.points.map((point, i) => (
+                                                    <li key={i}>{point}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                    {(post.content as unknown as { advantages: { consistency?: { title: string; points: string[] } } }).advantages.consistency && (
+                                        <div className="mb-4">
+                                            <h3>{(post.content as unknown as { advantages: { consistency: { title: string } } }).advantages.consistency.title}</h3>
+                                            <ul>
+                                                {(post.content as unknown as { advantages: { consistency: { points: string[] } } }).advantages.consistency.points.map((point, i) => (
+                                                    <li key={i}>{point}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                </section>
+                            )}
 
                             {/* Conclusion */}
-                            <section>
-                                <h2>{post.content.conclusion.title}</h2>
-                                <ul>
-                                    {Object.values(post.content.conclusion.requirements).map((req, index) => (
-                                        <li key={index}>{req}</li>
-                                    ))}
-                                </ul>
-                                <p>{post.content.conclusion.results}</p>
-                            </section>
+                            {post.content.conclusion && (
+                                <section>
+                                    <h2>{post.content.conclusion.title}</h2>
+                                    {post.content.conclusion.requirements && (
+                                        <ul>
+                                            {Object.values(post.content.conclusion.requirements).map((req, index) => (
+                                                <li key={index}>{req}</li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                    {post.content.conclusion.results && (
+                                        <p>{post.content.conclusion.results}</p>
+                                    )}
+                                    {(post.content.conclusion as unknown as { description?: string }).description && (
+                                        <p>{(post.content.conclusion as unknown as { description: string }).description}</p>
+                                    )}
+                                    {(post.content.conclusion as unknown as { keyPoints?: string[] }).keyPoints && (
+                                        <ul>
+                                            {(post.content.conclusion as unknown as { keyPoints: string[] }).keyPoints.map((point, i) => (
+                                                <li key={i}>{point}</li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </section>
+                            )}
                         </motion.div>
 
                         {/* Tags */}

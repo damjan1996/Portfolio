@@ -14,15 +14,15 @@ const HomePage = () => {
         '@context': 'https://schema.org',
         '@type': 'ProfilePage',
         '@id': 'https://damjan-savic.com/#profilepage',
-        name: 'Damjan Savić - Senior Fullstack Entwickler & Digital Solutions Consultant',
+        name: 'Damjan Savić - AI & Automation Specialist',
         description:
-            'Damjan Savić ist Senior Fullstack Entwickler und Digital Solutions Consultant in Köln. Spezialisiert auf Enterprise Software Development, KI-Integration, Cloud Architecture und digitale Transformation.',
+            'Damjan Savić ist AI & Automation Specialist. Spezialisiert auf KI-Agenten, Voice AI, Prozessautomatisierung mit n8n, und Fullstack Development.',
         mainEntity: {
             '@type': 'Person',
             name: 'Damjan Savić',
-            jobTitle: ['Senior Fullstack Developer', 'Digital Solutions Consultant', 'Software Architect'],
+            jobTitle: ['AI & Automation Specialist', 'Process Automation Specialist', 'Fullstack Developer'],
             description:
-                'Damjan Savić ist Senior Fullstack Entwickler und Digital Solutions Consultant mit über 10 Jahren Erfahrung in Enterprise Software Development, Cloud-native Lösungen und KI-Integration.',
+                'Damjan Savić entwickelt KI-Agenten und Automatisierungslösungen. Von Voice-AI-Plattformen bis zu autonomen Web-Agenten.',
             knowsLanguage: [
                 'English',
                 'German',
@@ -33,34 +33,29 @@ const HomePage = () => {
             ],
             hasOccupation: {
                 '@type': 'Occupation',
-                name: 'Senior Fullstack Developer & Digital Solutions Consultant',
+                name: 'AI & Automation Specialist',
                 skills: [
-                    'Enterprise Software Development',
-                    'Cloud Architecture (AWS, Azure)',
+                    'AI Agents Development',
+                    'Voice AI (Vapi)',
+                    'Process Automation (n8n, Zapier)',
                     'Python Development',
-                    'React & TypeScript',
-                    'KI/ML Integration (OLLAMA, LLMs)',
-                    'Microservices Architecture',
-                    'SAP & ERP Integration',
-                    'E-commerce Solutions',
-                    'DevOps & CI/CD',
-                    'Digital Transformation Consulting'
+                    'TypeScript & React',
+                    'Next.js',
+                    'GPT-4 & Claude API Integration',
+                    'Web Scraping',
+                    'Supabase & PostgreSQL',
+                    'WebSocket & Real-time Applications'
                 ]
-            },
-            alumniOf: {
-                '@type': 'CollegeOrUniversity',
-                name: 'Technische Universität'
             },
             worksFor: {
                 '@type': 'Organization',
-                name: 'CoderConda',
-                description: 'IT-Beratung und Software Development von Damjan Savić',
-                founder: 'Damjan Savić',
-                location: 'Köln, Deutschland'
+                name: 'Everlast Consulting GmbH',
+                description: 'Process Automation & AI Solutions',
+                location: 'Remote'
             },
             address: {
                 '@type': 'PostalAddress',
-                addressLocality: 'Köln',
+                addressLocality: 'Bergisch Gladbach',
                 addressRegion: 'Nordrhein-Westfalen',
                 addressCountry: 'Deutschland'
             }
@@ -68,14 +63,13 @@ const HomePage = () => {
     };
 
     const metaDescription =
-        'Damjan Savić - Senior Fullstack Entwickler & Digital Solutions Consultant in Köln. Spezialisiert auf Enterprise Software Development, ' +
-        'Cloud Architecture, KI-Integration mit OLLAMA, Microservices und digitale Transformation. Damjan Savić entwickelt maßgeschneiderte ' +
-        'Lösungen mit Python, React, TypeScript für E-Commerce, ERP-Integration und Business Process Automation. Kontaktieren Sie Damjan Savić.';
+        'Damjan Savić - AI & Automation Specialist. Entwicklung von KI-Agenten und Automatisierungslösungen mit n8n, Vapi Voice AI, ' +
+        'GPT-4 und Claude API. Von Voice-AI-Plattformen bis zu autonomen Web-Agenten. TypeScript, Python, Next.js.';
 
     return (
         <>
             <SEO
-                title="Damjan Savić - Senior Fullstack Entwickler & Digital Solutions Consultant Köln | Enterprise Software & KI-Experte"
+                title="Damjan Savić - AI & Automation Specialist | KI-Agenten, Voice AI & Prozessautomatisierung"
                 description={metaDescription}
                 schema={schema}
             />

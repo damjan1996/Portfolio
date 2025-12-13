@@ -7,14 +7,24 @@ export const experience = {
     },
     positions: [
         {
-            role: 'Consultant Digital Solutions & Developer',
-            company: 'RITTER Gesellschaft für digitale Geschäftsprozesse mbH',
-            period: '08/2023 - HEUTE',
+            role: 'Process Automation Specialist',
+            company: 'Everlast Consulting GmbH',
+            period: '12/2024 - HEUTE',
             highlights: [
-                'JTL WaWi, WMS und POS Beratung & Implementierung',
-                'Python-basierte Automationslösungen',
-                'RFID-Systeme und GUI-Entwicklung',
-                'KI & Business Intelligence'
+                'Entwicklung von KI-Agenten mit n8n und Zapier',
+                'Aufbau von Web-Scraping-Lösungen',
+                'RecroBot Voice-Interview-Plattform',
+                'Migration von Power Automate zu n8n'
+            ]
+        },
+        {
+            role: 'Consultant Digital Solutions',
+            company: 'Ritter Digital GmbH',
+            period: '08/2023 - 11/2024',
+            highlights: [
+                'Backend-Services auf dedizierten Servern',
+                'KI-Integration via Power Automate',
+                'RFID/IoT-Lösungen mit Zebra-Hardware'
             ]
         },
         {
