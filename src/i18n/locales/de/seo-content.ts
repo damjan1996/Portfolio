@@ -1,17 +1,27 @@
 export const seoContent = {
   hero: {
-    title: "Damjan Savić | Fullstack-, IoT- & KI-Entwickler",
-    subtitle: "Skalierbare Softwarelösungen mit IoT- und KI-Integration",
-    description: "Als Fullstack-Entwickler aus Köln spezialisiert sich Damjan Savić auf die Entwicklung skalierbarer Softwarelösungen mit IoT- und KI-Integration.",
+    title: "Damjan Savić | Voice AI, KI-Agenten & Fullstack-Entwicklung",
+    subtitle: "Voice AI, autonome Agenten und skalierbare Softwarelösungen",
+    description: "Als AI & Automation Specialist aus Köln entwickelt Damjan Savić Voice AI Lösungen, autonome KI-Agenten und skalierbare Fullstack-Anwendungen mit Claude, GPT-4 und n8n.",
     cta: {
       primary: "Projekte ansehen",
       secondary: "Kontakt aufnehmen"
     }
   },
   services: {
-    title: "IT-Dienstleistungen von Damjan Savić - Senior Developer & Consultant Köln",
-    subtitle: "Maßgeschneiderte Enterprise Solutions & Digital Transformation von Damjan Savić",
+    title: "IT-Dienstleistungen von Damjan Savić - AI & Automation Specialist Köln",
+    subtitle: "Voice AI, KI-Agenten & Enterprise Solutions von Damjan Savić",
     items: {
+      voiceai: {
+        title: "Voice AI Entwicklung von Damjan Savić | VAPI, Conversational AI & Sprachassistenten",
+        description: "Damjan Savić entwickelt Voice AI Lösungen mit VAPI und Conversational AI. Von automatisierten Telefonassistenten bis zu Recruiting-Bots wie Recrobot - Damjan Savić implementiert sprachgesteuerte KI-Systeme für Ihr Unternehmen.",
+        keywords: ["Voice AI Entwickler Deutschland", "VAPI Integration", "Sprachassistent Entwicklung", "Conversational AI", "AI Voice Agent", "Recruiting Bot"]
+      },
+      agents: {
+        title: "Autonome KI-Agenten von Damjan Savić | n8n, Claude & GPT-4 Integration",
+        description: "Damjan Savić entwickelt autonome KI-Agenten mit n8n, Claude API und GPT-4. Diese intelligenten Systeme automatisieren komplexe Workflows, treffen eigenständige Entscheidungen und optimieren Ihre Geschäftsprozesse.",
+        keywords: ["Autonome KI Agenten", "n8n Automatisierung", "Claude API Integration", "GPT-4 Integration", "AI Workflow Automatisierung", "Anthropic Developer"]
+      },
       backend: {
         title: "Enterprise Backend Development von Damjan Savić | Python & Cloud Architecture",
         description: "Damjan Savić entwickelt skalierbare Backend-Systeme mit Python, FastAPI und Django. Als erfahrener Cloud Architect implementiert Damjan Savić Microservices, RESTful APIs und Event-Driven Architectures für Enterprise-Anwendungen.",
@@ -23,9 +33,9 @@ export const seoContent = {
         keywords: ["React Entwickler Köln", "Frontend Entwickler Köln", "Next.js Entwickler Deutschland", "TypeScript React Entwickler", "Progressive Web App Entwicklung", "JavaScript Entwickler Köln"]
       },
       ai: {
-        title: "KI & Machine Learning Integration von Damjan Savić | OLLAMA & LLM Experte",
-        description: "Damjan Savić integriert künstliche Intelligenz in Ihre Geschäftsprozesse. Als KI-Spezialist implementiert Damjan Savić OLLAMA, Large Language Models und Machine Learning Lösungen für Automatisierung, Datenanalyse und intelligente Systeme.",
-        keywords: ["OLLAMA KI Integration Entwickler", "Python KI Entwicklung", "Machine Learning Köln", "LLM Integration", "AI Developer Köln", "NLP Entwicklung"]
+        title: "KI & LLM Integration von Damjan Savić | Claude, GPT-4 & OLLAMA Experte",
+        description: "Damjan Savić integriert Claude, GPT-4 und OLLAMA in Ihre Geschäftsprozesse. Als KI-Spezialist implementiert Damjan Savić RAG-Systeme, Prompt Engineering und LLM-basierte Automatisierungen für intelligente Unternehmenslösungen.",
+        keywords: ["Claude API Integration", "GPT-4 Integration Entwickler", "OLLAMA KI Integration", "LLM Entwickler", "RAG Entwicklung", "Prompt Engineering", "Anthropic Developer"]
       },
       erp: {
         title: "ERP & System Integration von Damjan Savić | SAP, Dynamics & Custom Solutions",

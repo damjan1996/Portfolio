@@ -1,9 +1,17 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { MapPin, Briefcase, GraduationCap, Code, Award } from 'lucide-react';
+import { MapPin, Briefcase, GraduationCap, Code, Award, Download } from 'lucide-react';
 
 const About = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    // CV-Datei basierend auf der aktuellen Sprache
+    const getCvUrl = () => {
+        const lang = i18n.language;
+        if (lang === 'de') return '/damjan_savic_cv_de.pdf';
+        // Für alle anderen Sprachen (en, sr, etc.) englische Version verwenden
+        return '/damjan_savic_cv_en.pdf';
+    };
 
     const highlights = [
         { icon: <MapPin className="w-4 h-4" />, label: "Köln, Deutschland" },
@@ -96,21 +104,25 @@ const About = () => {
                             transition={{ duration: 0.5, delay: 0.6 }}
                             className="flex flex-wrap gap-4 pt-4"
                         >
-                            <motion.button
+                            <motion.a
+                                href="/about"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 className="px-6 py-3 bg-zinc-800/50 backdrop-blur-sm hover:bg-zinc-700/50 text-white rounded-xl font-medium transition-colors duration-300 flex items-center gap-2"
                             >
                                 <GraduationCap className="w-4 h-4" />
-                                Mehr erfahren
-                            </motion.button>
-                            <motion.button
+                                {t('pages.home.about.buttons.learnMore')}
+                            </motion.a>
+                            <motion.a
+                                href={getCvUrl()}
+                                download
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="px-6 py-3 bg-transparent hover:bg-zinc-800/30 text-zinc-300 border border-zinc-700/50 rounded-xl font-medium transition-colors duration-300"
+                                className="px-6 py-3 bg-transparent hover:bg-zinc-800/30 text-zinc-300 border border-zinc-700/50 rounded-xl font-medium transition-colors duration-300 flex items-center gap-2"
                             >
-                                CV herunterladen
-                            </motion.button>
+                                <Download className="w-4 h-4" />
+                                {t('pages.home.about.buttons.downloadCV')}
+                            </motion.a>
                         </motion.div>
                     </div>
                 </motion.div>

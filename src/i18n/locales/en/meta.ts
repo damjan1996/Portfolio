@@ -5,39 +5,83 @@ export const meta = {
         subtitle: 'Scalable Software Solutions with IoT and AI Integration',
         description: 'As a fullstack developer from Cologne, Damjan Savić specializes in building scalable software solutions with IoT and AI integration.',
         keywords: [
+            // Name & Branding
             'Damjan Savić',
             'Damjan Savic',
+            'CoderConda',
+
+            // Voice AI & Agents (NEW - Recrobot Focus)
+            'Voice AI Developer',
+            'VAPI Integration Developer',
+            'Voice AI Recruiting',
+            'Voice Assistant Development',
+            'Conversational AI Developer',
+            'AI Voice Agent Development',
+            'Autonomous AI Agents',
+            'n8n Automation Developer',
+            'AI Workflow Automation',
+
+            // AI & LLM Integration (NEW - Claude/GPT)
+            'Claude API Integration',
+            'Anthropic Developer',
+            'GPT-4 Integration Developer',
+            'LLM Developer',
+            'AI Automation',
+            'AI Agent Development',
+            'Prompt Engineering',
+            'RAG Development',
+            'OLLAMA AI Integration',
+
+            // HR-Tech & Recruiting (NEW - Recrobot)
+            'Recruiting Automation',
+            'HR Software Development',
+            'AI Interview Software',
+            'HR Tech Developer',
+            'Talent Acquisition Software',
+
+            // Fullstack & Core Skills
             'Senior Fullstack Developer Cologne',
             'Digital Solutions Consultant Germany',
-            'Software Architect Cologne',
-            'Python Development',
-            'JavaScript Development',
-            'React.js',
-            'Next.js',
-            'TypeScript',
-            'Electron Desktop Applications',
-            'Artificial Intelligence AI',
-            'OLLAMA AI ML',
-            'ERP Integration',
-            'E-Commerce Development',
-            'Process Automation',
-            'Backend Development',
-            'Frontend Development',
-            'Web Development',
-            'Software Engineering',
-            'Cloud Native Development',
-            'Microservices Architecture',
-            'DevOps Engineer Germany',
-            'Enterprise Software Solutions',
-            'Digital Transformation Consultant',
-            'SAP Integration Specialist',
-            'E-Commerce Developer Germany',
-            'Machine Learning Engineer',
-            'Large Language Models LLM',
-            'Docker Kubernetes Expert',
+            'Software Architect',
+            'Python Developer Germany',
+            'React Developer',
+            'Next.js Developer',
+            'TypeScript Developer',
+            'Full Stack Developer Europe',
+
+            // Backend & API
+            'Python FastAPI Developer',
+            'Microservices Developer',
+            'Backend Developer',
+            'Node.js Developer',
+            'Django Developer',
+            'API Development',
+
+            // Frontend
+            'Frontend Developer',
+            'JavaScript Developer',
+            'React Native Developer',
+            'Progressive Web App Development',
+
+            // Automation & Integration
+            'Process Automation Python',
+            'ERP System Integration',
+            'E-Commerce Integration',
+            'Workflow Automation',
+            'RPA Developer',
+
+            // Enterprise & B2B
+            'Enterprise Software Developer',
+            'B2B Software Development',
+            'Custom Software Development',
+            'Freelance Developer Europe',
+            'Remote Developer',
+
+            // DevOps & Cloud
             'AWS Cloud Architect',
-            'Agile Software Development',
-            'Remote Developer Europe'
+            'DevOps Engineer',
+            'Docker Kubernetes Expert',
+            'Electron Desktop Applications'
         ].join(', ')
     },
     company: {
@@ -75,37 +119,52 @@ export const meta = {
     },
     expertise: {
         areas: [
+            // Voice AI & Agents (Priority)
+            'Voice AI Development with VAPI',
+            'Autonomous AI Agents',
+            'n8n Workflow Automation',
+            'Conversational AI & Chatbots',
+
+            // LLM & AI Integration
+            'Claude API Integration',
+            'GPT-4 & OpenAI Integration',
+            'OLLAMA & Local LLMs',
+            'RAG & Prompt Engineering',
+
+            // Fullstack Development
             'Enterprise Software Development',
-            'Cloud-native Architecture',
             'Python Backend Development',
-            'JavaScript/TypeScript Frontend',
-            'AI/ML Integration with OLLAMA & LLMs',
-            'Business Process Automation',
+            'React & Next.js Frontend',
+            'TypeScript & JavaScript',
+
+            // Integration & Automation
+            'ERP System Integration',
             'E-Commerce Platforms',
-            'SAP & ERP System Integration',
-            'Microservices & API Development',
-            'DevOps & CI/CD Pipelines',
-            'Progressive Web Apps (PWA)',
-            'Electron Desktop Applications',
-            'React & Next.js Enterprise Apps',
-            'Digital Transformation Consulting'
+            'Business Process Automation',
+            'Microservices & API Development'
         ],
         technologies: [
+            // AI & LLM
+            'Claude AI',
+            'GPT-4',
+            'VAPI',
+            'OLLAMA',
+            'n8n',
+            'LangChain',
+
+            // Languages & Frameworks
             'Python',
-            'JavaScript',
             'TypeScript',
             'React',
             'Next.js',
             'Node.js',
-            'OLLAMA',
-            'Electron',
             'FastAPI',
-            'Django',
-            'PostgreSQL',
-            'MongoDB',
+
+            // Infrastructure
             'Docker',
-            'Kubernetes',
-            'AWS'
+            'AWS',
+            'PostgreSQL',
+            'MongoDB'
         ]
     },
     seo: {

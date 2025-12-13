@@ -6,6 +6,10 @@ export const about = {
         'Seine Spezialisierung umfasst die Integration von GPT-4 und Claude API in Produktions-Workflows, Middleware-Entwicklung für ERP-Systeme wie Apparel Magic und JTL, sowie RFID/IoT-Automatisierung mit Zebra-Hardware. Von der Systemintegration über API-Entwicklung bis zur Fullstack-Implementierung mit Python, TypeScript und React/Next.js liefert er pragmatische Lösungen für komplexe Geschäftsanforderungen.',
     image: {
         alt: 'Damjan Savić - Senior Fullstack Entwickler & Digital Solutions Consultant Köln | Software Architect | Cloud Expert | KI-Spezialist'
+    },
+    buttons: {
+        learnMore: 'Mehr erfahren',
+        downloadCV: 'CV herunterladen'
     }
 } as const;
 export type AboutTranslations = typeof about;

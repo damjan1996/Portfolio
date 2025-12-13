@@ -6,6 +6,10 @@ import { skillgroup } from './skillgroup';
 import { skills } from './skills';
 import { workflow } from './workflow';
 export const about = {
+    seo: {
+        title: 'O Meni - Damjan Savić | Fullstack Programer & AI Specijalista',
+        description: 'Saznajte više o Damjanu Saviću - AI & Automation Specialist sa fokusom na Voice AI, autonomne agente i automatizaciju procesa iz Kelna, Nemačka.'
+    },
     hero,
     journey,
     schema,
