@@ -6,6 +6,7 @@ import powerPlatformGovernance from './projects/power-platform-governance';
 import websiteMitKi from './projects/website-mit-ki';
 import recrobot from './projects/recrobot';
 import aiMusicProduction from './projects/ai-music-production';
+import automatedAdCreatives from './projects/automated-ad-creatives';
 export const portfolio = {
     // Meta information for the portfolio page
     seo: {
@@ -64,5 +65,6 @@ export const portfolio = {
         'website-mit-ki': websiteMitKi,
         'recrobot': recrobot,
         'ai-music-production': aiMusicProduction,
+        'automated-ad-creatives': automatedAdCreatives,
     }
 };
