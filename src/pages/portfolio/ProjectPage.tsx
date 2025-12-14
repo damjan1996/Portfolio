@@ -33,6 +33,10 @@ import deRecrobot from '../../i18n/locales/de/portfolio/projects/recrobot';
 import enRecrobot from '../../i18n/locales/en/portfolio/projects/recrobot';
 import srRecrobot from '../../i18n/locales/sr/portfolio/projects/recrobot';
 
+import deAiMusicProduction from '../../i18n/locales/de/portfolio/projects/ai-music-production';
+import enAiMusicProduction from '../../i18n/locales/en/portfolio/projects/ai-music-production';
+import srAiMusicProduction from '../../i18n/locales/sr/portfolio/projects/ai-music-production';
+
 // Interfaces für den Projektinhalt
 interface ProjectMeta {
     date?: string;
@@ -124,6 +128,11 @@ const projectTranslations: ProjectTranslations = {
         de: deRecrobot,
         en: enRecrobot,
         sr: srRecrobot,
+    },
+    'ai-music-production': {
+        de: deAiMusicProduction,
+        en: enAiMusicProduction,
+        sr: srAiMusicProduction,
     },
 };
 

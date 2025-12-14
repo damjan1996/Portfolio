@@ -5,6 +5,7 @@ import smartWarehouse from './projects/smart-warehouse';
 import powerPlatformGovernance from './projects/power-platform-governance';
 import websiteMitKi from './projects/website-mit-ki';
 import recrobot from './projects/recrobot';
+import aiMusicProduction from './projects/ai-music-production';
 export const portfolio = {
     // Meta-Informationen für die Portfolio-Seite
     seo: {
@@ -62,5 +63,6 @@ export const portfolio = {
         'power-platform-governance': powerPlatformGovernance,
         'website-mit-ki': websiteMitKi,
         'recrobot': recrobot,
+        'ai-music-production': aiMusicProduction,
     }
 };
